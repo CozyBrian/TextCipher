@@ -126,3 +126,18 @@ while True:
             "Y": "X",
             "Z": "Y",
         }
+        Output = ""
+
+        for ch in Text:
+            Output += Alpha_to_Enc.get(ch, "!") 
+        print(Output)
+    elif command == "help":
+        print('''
+        Type "E" to Encipher
+        Type "D" to Decipher
+        Type "Done" to End Program
+        ''')
+    elif command == "done":
+        break
+    else:
+        print('Try E or D')
